@@ -9,8 +9,8 @@ import java.util.concurrent.ExecutionException;
 public class NewOrder {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         var producer = new KafkaProducer<String, String>(properties());
-        var value = "3511,0713,5678990";
-        var record = new ProducerRecord<>( "Andre_topic", value, value);
+        var value = "356ll14,07993,LK5678ll990";
+        var record = new ProducerRecord<>( "ECOMMERCE_FRAUDE", value, value);
         Callback callback = (data, ex) -> {
             if (ex != null) {
                 ex.printStackTrace();
